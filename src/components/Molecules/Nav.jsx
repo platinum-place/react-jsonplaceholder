@@ -5,8 +5,13 @@ function Nav() {
     return (
         <ul className="navbar-nav ml-auto">
             <Item
-               name="Inicio"
-               url="/"
+                name="Inicio"
+                url="/"
+            />
+
+            <Item
+                name="Pokedex"
+                url="/pokedex"
             />
         </ul>
     );

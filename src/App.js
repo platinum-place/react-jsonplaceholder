@@ -7,6 +7,7 @@ import {
 
 import Home from "./components/Pages/Home";
 import Header from './components/Templates/Header';
+import Pokedex from './components/Pages/Pokedex';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
 
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/pokedex" element={<Pokedex />} />
 
           <Route
             path="*"

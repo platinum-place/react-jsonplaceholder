@@ -3,7 +3,10 @@ import Navbar from '../Organisms/Navbar';
 
 function Header() {
     return (
-        <Navbar />
+        <>
+            <Navbar />
+            <br />
+        </>
     );
 }
 
