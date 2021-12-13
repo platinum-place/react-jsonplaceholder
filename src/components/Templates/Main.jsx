@@ -6,7 +6,7 @@ function Main() {
         <main>
             <Article
                 titulo="Pokemon JS"
-                descripcion="Esta en una webapp con el fin de probar mi uso del react"
+                descripcion="Esta en una webapp con el fin de probar mi uso de react"
             />
         </main>
     );
