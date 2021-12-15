@@ -6,18 +6,25 @@ import {
 } from "react-router-dom";
 
 import Home from "./components/Pages/Home";
-import Header from './components/Templates/Header';
-import Pokedex from './components/Pages/Pokedex';
+import Posts from './components/Pages/Posts';
+import Albums from './components/Pages/Albums';
+import Album from './components/Pages/Album';
+import Navbar from './components/Organisms/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <Navbar />
+      <br />
 
       <div className="container">
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pokedex" element={<Pokedex />} />
+          <Route path="/" element={<Home />} />
+
+          <Route path="/posts" element={<Posts />} />
+
+          <Route path="/albums" element={<Albums />} />
+          <Route path="/album/:id" element={<Album />} />
 
           <Route
             path="*"
@@ -29,6 +36,8 @@ function App() {
           />
         </Routes>
       </div>
+
+      <br />
     </BrowserRouter>
   );
 }

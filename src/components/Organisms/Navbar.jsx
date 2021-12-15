@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <span className="navbar-brand mb-0 h1">Pokedex</span>
+                <span className="navbar-brand mb-0 h1">WebApp</span>
                 <Nav />
             </div>
         </nav>

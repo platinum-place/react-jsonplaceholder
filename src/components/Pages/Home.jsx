@@ -1,9 +1,13 @@
 import React from 'react';
-import Main from '../Templates/Main';
+import Article from '../Molecules/Article';
 
 function Home() {
     return (
-        <Main />
+            <Article
+                titulo="Consumidor de JSONPlaceholder"
+                descripcion="Esta en una webapp con el fin de consumir 
+            una API falsa gratuita para pruebas y creación de prototipos."
+            />
     );
 }
 
