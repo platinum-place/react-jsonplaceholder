@@ -1,17 +1,19 @@
-import React from 'react';
-import AlbumGrid from '../Templates/AlbumGrid';
-import Article from '../Molecules/Article';
+import React from 'react'
+import Card from '../UI/Molecules/Card';
+import AlbumsGrid from '../UI/Organisms/AlbumsGrid';
 
 function Albums() {
     return (
         <>
-            <Article
-                titulo="Albums example"
-                descripcion='Este es un ejemplo de uso del endpoint "https://jsonplaceholder.typicode.com/albums".
-                Cada tarjeta es un album que muestra las fotos que tenga asociado.'
-            />
+            <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                <Card
+                    tittle="Albums example"
+                    text='Ejemplo de uso del endpoint "https://jsonplaceholder.typicode.com/albums". 
+                        Cada tarjeta es un album que muestra las fotos que tenga asociado.'
+                />
+            </div>
 
-            <AlbumGrid />
+            <AlbumsGrid />
         </>
     );
 }

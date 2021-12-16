@@ -1,19 +1,21 @@
-import React from 'react';
-import Article from '../Molecules/Article';
-import PostGrid from '../Templates/PostGrid';
+import React from 'react'
+import Card from '../UI/Molecules/Card';
+import PostsGrid from '../UI/Organisms/PostsGrid';
 
-function Pokedex() {
+function Posts() {
     return (
         <>
-        <Article
-            titulo="Title of a longer featured blog post"
-            descripcion='Este es un ejemplo de uso del endpoint "https://jsonplaceholder.typicode.com/posts".
-            Donde cada publicacion tiene sus comentarios.'
-        />
+            <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                <Card
+                    tittle="Posts example"
+                    text='Ejemplo de uso del endpoint "https://jsonplaceholder.typicode.com/posts", 
+                    donde cada publicacion tiene sus comentarios.'
+                />
+            </div>
 
-        <PostGrid />
-    </>
+            <PostsGrid />
+        </>
     );
 }
 
-export default Pokedex;
+export default Posts;

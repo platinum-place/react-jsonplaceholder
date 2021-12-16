@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import PostCard from '../Organisms/PostCard';
+import PostCard from '../Molecules/PostCard';
 
-function PostGrid() {
+function PostsGrid() {
     const [posts, setPosts] = useState([
         {
             "userId": 1,
@@ -21,15 +21,18 @@ function PostGrid() {
         <div className="row mb-2">
             {
                 posts.map((post, i) =>
-                    <PostCard
-                        key={i}
-                        id={post.id}
-                        title={post.title}
-                        body={post.body}
-                    />)
+                    <div className="col-md-6">
+                        <PostCard
+                            key={i}
+                            id={post.id}
+                            title={post.title}
+                            body={post.body}
+                        />
+                    </div>
+                )
             }
         </div>
     );
 }
 
-export default PostGrid;
+export default PostsGrid;
